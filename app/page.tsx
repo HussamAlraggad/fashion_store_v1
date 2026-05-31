@@ -72,36 +72,40 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         {/* HERO */}
-        <section className="relative h-[85vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
+        <section className="relative h-[85vh] md:h-[90vh] bg-luxury-black overflow-hidden">
           <img
-            src="https://burst.shopifycdn.com/photos/pink-silk-fur.jpg?width=1600"
+            src="https://burst.shopifycdn.com/photos/high-fashion-in-fur.jpg?width=1600"
             alt="Luxury fur fashion editorial"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-luxury-black/30 to-transparent" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <p className="font-body text-xs md:text-sm tracking-[0.35em] uppercase text-luxury-gold font-semibold mb-4">
-              The Art of Fur Since 1985
-            </p>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-luxury-ivory mb-6 leading-tight font-bold">
-              Timeless
-              <br />
-              <span className="text-luxury-gold">Elegance</span>
-            </h1>
-            <p className="font-body text-sm md:text-base text-luxury-gray max-w-md mb-10 leading-relaxed">
-              Discover our latest collection of handcrafted fur fashion,
-              where heritage meets contemporary design.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/products" className="btn-gold text-sm md:text-base font-semibold !px-10 !py-4">
-                Explore Collection
-              </Link>
-              <Link
-                href="/#story"
-                className="btn-secondary !border-luxury-ivory !text-luxury-ivory hover:!bg-luxury-ivory hover:!text-luxury-charcoal text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
-              >
-                Our Story
-              </Link>
+          {/* Dark overlay — heavier on the left for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-luxury-black/90 via-luxury-black/60 to-luxury-black/20" />
+          {/* Text content — left-aligned for editorial feel */}
+          <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+            <div className="max-w-lg">
+              <p className="font-body text-xs md:text-sm tracking-[0.35em] uppercase text-luxury-gold font-semibold mb-4">
+                The Art of Fur Since 1985
+              </p>
+              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-luxury-ivory mb-6 leading-tight font-bold">
+                Timeless
+                <br />
+                <span className="text-luxury-gold">Elegance</span>
+              </h1>
+              <p className="font-body text-sm md:text-base text-luxury-ivory/80 max-w-md mb-10 leading-relaxed font-medium">
+                Discover our latest collection of handcrafted fur fashion,
+                where heritage meets contemporary design.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/products" className="btn-gold text-sm md:text-base font-semibold !px-10 !py-4">
+                  Explore Collection
+                </Link>
+                <Link
+                  href="/#story"
+                  className="btn-secondary !border-luxury-ivory !text-luxury-ivory hover:!bg-luxury-ivory hover:!text-luxury-charcoal text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
+                >
+                  Our Story
+                </Link>
+              </div>
             </div>
           </div>
         </section>
