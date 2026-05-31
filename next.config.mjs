@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // All images served from /public/images/ — no remote patterns needed
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "burst.shopifycdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

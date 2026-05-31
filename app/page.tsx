@@ -74,7 +74,7 @@ export default function HomePage() {
         {/* HERO */}
         <section className="relative h-[85vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
           <img
-            src="/images/fur-coat-01.jpg"
+            src="https://burst.shopifycdn.com/photos/pink-silk-fur.jpg?width=1600"
             alt="Luxury fur fashion editorial"
             className="absolute inset-0 w-full h-full object-cover"
           />

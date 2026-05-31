@@ -10,8 +10,8 @@
     "compareAtPrice": 29900.0,
     "currency": "USD",
     "images": [
-      "/images/fur-coat-brown.jpg",
-      "/images/fur-coat-pink.jpg"
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=85",
+      "https://burst.shopifycdn.com/photos/snowfall-on-winter-fashion.jpg?width=800"
     ],
     "material": "Russian Mink",
     "origin": "Russia",
@@ -42,8 +42,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fur-coat-pink.jpg",
-      "/images/fur-coat-white.jpg"
+      "https://burst.shopifycdn.com/photos/pink-silk-fur.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/slow-fashion-coat.jpg?width=800"
     ],
     "material": "Silver Fox",
     "origin": "Scandinavia",
@@ -71,8 +71,8 @@
     "compareAtPrice": 21000.0,
     "currency": "USD",
     "images": [
-      "/images/fur-coat-white.jpg",
-      "/images/fur-coat-light-pink.jpg"
+      "https://burst.shopifycdn.com/photos/high-fashion-in-fur.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/wrapped-up-warm.jpg?width=800"
     ],
     "material": "Russian Sable",
     "origin": "Siberia, Russia",
@@ -103,8 +103,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/hands-in-coat-pocket.jpg",
-      "/images/blond-woman-snow.jpg"
+      "https://burst.shopifycdn.com/photos/hands-holds-buttercup-flowers-in-the-pocket-of-their-coat.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/bright-winter-light-behind-blond-woman.jpg?width=800"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -134,8 +134,8 @@
     "compareAtPrice": 1500.0,
     "currency": "USD",
     "images": [
-      "/images/fur-coat-light-pink.jpg",
-      "/images/leopard-coat.jpg"
+      "https://burst.shopifycdn.com/photos/light-pink-fur-fashion.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/woman-in-black-trench-in-winter-woods.jpg?width=800"
     ],
     "material": "Modacrylic Faux Fur",
     "origin": "Italy",
@@ -167,8 +167,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/leopard-coat.jpg",
-      "/images/fur-collar.jpg"
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=85",
+      "https://burst.shopifycdn.com/photos/woman-in-winter-fashion-holding-ice-above.jpg?width=800"
     ],
     "material": "Chinchilla",
     "origin": "Argentina",
@@ -198,8 +198,8 @@
     "compareAtPrice": 2200.0,
     "currency": "USD",
     "images": [
-      "/images/blond-woman-snow.jpg",
-      "/images/high-fashion-neon.jpg"
+      "https://burst.shopifycdn.com/photos/bright-winter-light-behind-blond-woman.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/high-fashion-with-neon.jpg?width=800"
     ],
     "material": "Fox Fur / Shearling",
     "origin": "Finland",
@@ -228,8 +228,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/high-fashion-neon.jpg",
-      "/images/silky-ladies-fashion.jpg"
+      "https://burst.shopifycdn.com/photos/high-fashion-with-neon.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/silky-ladies-fashion.jpg?width=800"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -259,8 +259,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/silky-ladies-fashion.jpg",
-      "/images/fashion-editorial-01.jpg"
+      "https://burst.shopifycdn.com/photos/silky-ladies-fashion.jpg?width=800",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
     ],
     "material": "Coyote Fur",
     "origin": "Canada",
@@ -288,8 +288,8 @@
     "compareAtPrice": 350.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-01.jpg",
-      "/images/fashion-editorial-02.jpg"
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
     ],
     "material": "Microfiber Faux Fur",
     "origin": "China",
@@ -317,8 +317,8 @@
     "compareAtPrice": 18000.0,
     "currency": "USD",
     "images": [
-      "/images/fur-collar.jpg",
-      "/images/snowfall-on-winter-fashion.jpg"
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=85",
+      "https://burst.shopifycdn.com/photos/man-in-coat-leans-against-railing.jpg?width=800"
     ],
     "material": "Sheared Beaver",
     "origin": "USA",
@@ -350,8 +350,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/snowfall-on-winter-fashion.jpg",
-      "/images/slow-fashion-coat.jpg"
+      "https://burst.shopifycdn.com/photos/snowfall-on-winter-fashion.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/bright-winter-light-behind-blond-woman.jpg?width=800"
     ],
     "material": "Lynx Fur",
     "origin": "Canada",
@@ -379,8 +379,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-02.jpg",
-      "/images/fashion-editorial-03.jpg"
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -408,8 +408,8 @@
     "compareAtPrice": 1100.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-03.jpg",
-      "/images/fashion-editorial-04.jpg"
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
     ],
     "material": "Acrylic Faux Fur",
     "origin": "Portugal",
@@ -441,8 +441,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-04.jpg",
-      "/images/fashion-editorial-05.jpg"
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
+      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80"
     ],
     "material": "Fisher Fur",
     "origin": "Canada",
@@ -473,8 +473,8 @@
     "compareAtPrice": 7800.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-05.jpg",
-      "/images/fashion-portrait-01.jpg"
+      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80",
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "Greece",
@@ -502,8 +502,8 @@
     "compareAtPrice": 38000.0,
     "currency": "USD",
     "images": [
-      "/images/slow-fashion-coat.jpg",
-      "/images/wrapped-up-warm.jpg"
+      "https://burst.shopifycdn.com/photos/slow-fashion-coat.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/high-fashion-with-neon.jpg?width=800"
     ],
     "material": "Barguzin Sable",
     "origin": "Siberia, Russia",
@@ -531,8 +531,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-portrait-01.jpg",
-      "/images/fashion-portrait-02.jpg"
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://burst.shopifycdn.com/photos/hands-holds-buttercup-flowers-in-the-pocket-of-their-coat.jpg?width=800"
     ],
     "material": "Faux Fur / Cashmere Blend",
     "origin": "Italy",
@@ -560,8 +560,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-portrait-02.jpg",
-      "/images/fashion-portrait-03.jpg"
+      "https://burst.shopifycdn.com/photos/hands-holds-buttercup-flowers-in-the-pocket-of-their-coat.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/bright-winter-light-behind-blond-woman.jpg?width=800"
     ],
     "material": "Red Fox",
     "origin": "Sweden",
@@ -591,8 +591,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-portrait-03.jpg",
-      "/images/accessories-01.jpg"
+      "https://burst.shopifycdn.com/photos/bright-winter-light-behind-blond-woman.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/high-fashion-with-neon.jpg?width=800"
     ],
     "material": "Raccoon Fur",
     "origin": "USA",
@@ -620,8 +620,8 @@
     "compareAtPrice": 950.0,
     "currency": "USD",
     "images": [
-      "/images/accessories-01.jpg",
-      "/images/accessories-02.jpg"
+      "https://burst.shopifycdn.com/photos/high-fashion-with-neon.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/silky-ladies-fashion.jpg?width=800"
     ],
     "material": "Sheared Mink / Shearling",
     "origin": "Finland",
@@ -651,8 +651,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/accessories-02.jpg",
-      "/images/luxury-01.jpg"
+      "https://burst.shopifycdn.com/photos/silky-ladies-fashion.jpg?width=800",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
     ],
     "material": "Polyester Faux Fur",
     "origin": "France",
@@ -683,8 +683,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/luxury-01.jpg",
-      "/images/luxury-02.jpg"
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -712,8 +712,8 @@
     "compareAtPrice": 3400.0,
     "currency": "USD",
     "images": [
-      "/images/luxury-02.jpg",
-      "/images/intimate-01.jpg"
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
     ],
     "material": "Polyester Faux Fur",
     "origin": "Turkey",
@@ -743,8 +743,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/intimate-01.jpg",
-      "/images/winter-coat-01.jpg"
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -776,8 +776,8 @@
     "compareAtPrice": 5800.0,
     "currency": "USD",
     "images": [
-      "/images/wrapped-up-warm.jpg",
-      "/images/woman-in-black-trench.jpg"
+      "https://burst.shopifycdn.com/photos/wrapped-up-warm.jpg?width=800",
+      "https://burst.shopifycdn.com/photos/silky-ladies-fashion.jpg?width=800"
     ],
     "material": "Silk / Russian Sable",
     "origin": "Italy",
@@ -808,8 +808,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/woman-in-black-trench.jpg",
-      "/images/winter-fashion-ice.jpg"
+      "https://burst.shopifycdn.com/photos/woman-in-black-trench-in-winter-woods.jpg?width=800",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -840,8 +840,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/winter-coat-01.jpg",
-      "/images/hands-in-coat-pocket.jpg"
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
+      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80"
     ],
     "material": "Rabbit Fur / Satin",
     "origin": "Italy",
@@ -871,8 +871,8 @@
     "compareAtPrice": 6500.0,
     "currency": "USD",
     "images": [
-      "/images/winter-fashion-ice.jpg",
-      "/images/man-in-coat.jpg"
+      "https://burst.shopifycdn.com/photos/woman-in-winter-fashion-holding-ice-above.jpg?width=800",
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
     ],
     "material": "Silver Fox / French Lace",
     "origin": "France",
@@ -902,8 +902,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/man-in-coat.jpg",
-      "/images/hands-in-coat-pocket.jpg"
+      "https://burst.shopifycdn.com/photos/man-in-coat-leans-against-railing.jpg?width=800",
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
     ],
     "material": "Sheared Mink / Mesh",
     "origin": "Italy",
