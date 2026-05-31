@@ -2,7 +2,7 @@
   {
     "id": "usr-admin-001",
     "email": "admin@fashionstore.com",
-    "password": "$2a$10$placeholder",
+    "password": "admin123",
     "name": "Vittoria De Luca",
     "role": "admin",
     "birthdate": "1985-03-15",
@@ -12,7 +12,7 @@
   {
     "id": "usr-001",
     "email": "elena.voss@example.com",
-    "password": "$2a$10$placeholder",
+    "password": "customer123",
     "name": "Elena Voss",
     "role": "customer",
     "birthdate": "1992-07-22",
@@ -22,7 +22,7 @@
   {
     "id": "usr-002",
     "email": "marcus.dupont@example.com",
-    "password": "$2a$10$placeholder",
+    "password": "customer123",
     "name": "Marcus Dupont",
     "role": "customer",
     "birthdate": "1988-11-03",
@@ -32,7 +32,7 @@
   {
     "id": "usr-003",
     "email": "sophie.bernard@example.com",
-    "password": "$2a$10$placeholder",
+    "password": "customer123",
     "name": "Sophie Bernard",
     "role": "customer",
     "birthdate": "1995-04-18",

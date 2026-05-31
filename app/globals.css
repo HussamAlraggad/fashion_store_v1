@@ -18,12 +18,29 @@
     --color-gray-dark: #444444;
   }
 
+  html.dark {
+    --color-charcoal: #E8E4DD;
+    --color-ivory: #141414;
+    --color-cream: #1E1E1E;
+    --color-gold: #D4AF37;
+    --color-gold-light: #B8962E;
+    --color-black: #FFFFFF;
+    --color-white: #0A0A0A;
+    --color-gray-light: #2A2A2A;
+    --color-gray: #999999;
+    --color-gray-dark: #CCCCCC;
+  }
+
   * {
     box-sizing: border-box;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  html.dark body {
+    @apply bg-luxury-ivory text-luxury-charcoal;
   }
 
   body {
@@ -37,6 +54,10 @@
 
   ::selection {
     @apply bg-luxury-gold/30 text-luxury-charcoal;
+  }
+
+  html.dark ::selection {
+    background-color: rgba(212, 175, 55, 0.3);
   }
 }
 

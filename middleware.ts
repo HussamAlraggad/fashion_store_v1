@@ -1,19 +1,25 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-/**
- * Middleware for route protection.
- *
- * In a production app, this would validate JWTs for age verification.
- * For the prototype, age-gating is handled client-side (sessionStorage),
- * so this middleware provides a basic structure for future enhancement.
- *
- * Protected routes: /admin/*
- * Public routes: /, /auth/*, /api/*
- *
- * Note: Full age-gate enforcement (18+) for /products, /cart, /checkout
- * is done client-side via the AgeGateModal component and auth checks.
- */
+interface Session {
+  id: string;
+  email: string;
+  name: string;
+  role: string;
+  birthdate: string;
+  ageVerified: boolean;
+}
+
+function getSession(request: NextRequest): Session | null {
+  const cookie = request.cookies.get("session");
+  if (!cookie?.value) return null;
+  try {
+    const json = atob(cookie.value);
+    const decoded = JSON.parse(json);
+    if (decoded && decoded.id) return decoded as Session;
+  } catch {}
+  return null;
+}
 
 const publicPaths = [
   "/",
@@ -32,19 +38,42 @@ function isPublicPath(pathname: string): boolean {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Allow public paths and API routes
   if (isPublicPath(pathname)) {
     return NextResponse.next();
   }
 
-  // For prototype: all routes are accessible client-side
-  // In production: validate session token here
+  const session = getSession(request);
+  const isAuthenticated = session !== null;
+
+  // Admin routes require admin role
+  if (pathname.startsWith("/admin")) {
+    if (!isAuthenticated) {
+      return NextResponse.redirect(new URL("/auth/login", request.url));
+    }
+    if (session.role !== "admin") {
+      return NextResponse.redirect(new URL("/", request.url));
+    }
+  }
+
+  // Shop routes require age-verified session
+  if (
+    pathname.startsWith("/products") ||
+    pathname.startsWith("/cart") ||
+    pathname.startsWith("/checkout")
+  ) {
+    if (!isAuthenticated) {
+      return NextResponse.redirect(new URL("/auth/login", request.url));
+    }
+    if (!session.ageVerified) {
+      return NextResponse.redirect(new URL("/auth/login", request.url));
+    }
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
   matcher: [
-    // Match all routes except static files
     "/((?!_next/static|_next/image|favicon.ico|images/).*)",
   ],
 };

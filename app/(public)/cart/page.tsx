@@ -76,7 +76,7 @@ export default function CartPage() {
                       <div>
                         <h3 className="font-display text-sm md:text-base text-luxury-charcoal">
                           <Link
-                            href={`/products/${item.productId}`}
+                            href={`/products/${item.slug}`}
                             className="hover:text-luxury-gold transition-colors"
                           >
                             {item.name}

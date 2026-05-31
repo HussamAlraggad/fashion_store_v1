@@ -6,6 +6,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { useCartStore } from "@/store/cartStore";
+import { useWishlistStore } from "@/store/wishlistStore";
 import { formatPrice } from "@/lib/utils";
 import type { Product } from "@/lib/api";
 
@@ -13,6 +14,7 @@ export default function ProductDetailPage() {
   const params = useParams();
   const slug = params.slug as string;
   const { addItem } = useCartStore();
+  const { addItem: addWishlist, removeItem: removeWishlist, isWishlisted } = useWishlistStore();
 
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -41,6 +43,7 @@ export default function ProductDetailPage() {
     addItem(
       {
         productId: product.id,
+        slug: product.slug,
         name: product.name,
         price: product.price,
         size: selectedSize,
@@ -50,6 +53,22 @@ export default function ProductDetailPage() {
     );
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
+  }
+
+  function handleToggleWishlist() {
+    if (!product) return;
+    if (isWishlisted(product.id)) {
+      removeWishlist(product.id);
+    } else {
+      addWishlist({
+        id: product.id,
+        slug: product.slug,
+        name: product.name,
+        price: product.price,
+        image: product.images[0],
+        material: product.material,
+      });
+    }
   }
 
   if (loading) {
@@ -226,6 +245,19 @@ export default function ProductDetailPage() {
                     : product.inStock
                     ? "Add to Cart"
                     : "Sold Out"}
+                </button>
+                <button
+                  onClick={handleToggleWishlist}
+                  className={`w-12 h-12 flex items-center justify-center border transition-colors ${
+                    isWishlisted(product.id)
+                      ? "border-luxury-gold text-luxury-gold"
+                      : "border-luxury-gray/20 text-luxury-gray hover:border-luxury-gold hover:text-luxury-gold"
+                  }`}
+                  aria-label="Toggle wishlist"
+                >
+                  <svg className="w-5 h-5" fill={isWishlisted(product.id) ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
                 </button>
               </div>
 

@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useAuthStore } from "@/store/authStore";
 
 export default function SignupPage() {
   const router = useRouter();
+  const login = useAuthStore((s) => s.login);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -55,12 +57,27 @@ export default function SignupPage() {
 
     try {
       const birthdate = `${form.birthYear}-${String(parseInt(form.birthMonth)).padStart(2, "0")}-${String(parseInt(form.birthDay)).padStart(2, "0")}`;
-      const mockUser = { id: `usr-${Date.now()}`, name: form.name, email: form.email, role: "customer" as const, birthdate, ageVerified: true };
-      sessionStorage.setItem("auth_user", JSON.stringify(mockUser));
-      sessionStorage.setItem("age_verified", "true");
-      sessionStorage.setItem("age_birthdate", birthdate);
-      router.push("/");
-      router.refresh();
+      const res = await fetch("/api/auth", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: form.name, email: form.email, password: form.password, birthdate }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error || "Registration failed");
+        return;
+      }
+
+      if (data.user) {
+        sessionStorage.setItem("auth_user", JSON.stringify(data.user));
+        sessionStorage.setItem("age_verified", "true");
+        sessionStorage.setItem("age_birthdate", birthdate);
+        login(data.user);
+        router.push("/");
+        router.refresh();
+      }
     } catch {
       setError("Registration failed. Please try again.");
     } finally {

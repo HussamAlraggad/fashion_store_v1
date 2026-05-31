@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/lib/api";
 import { formatPrice } from "@/lib/utils";
