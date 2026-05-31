@@ -16,12 +16,10 @@ export default function HomePage() {
   const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
-    // Check age verification — runs once on mount
     const verified = sessionStorage.getItem("age_verified") === "true";
     setAgeVerified(verified);
     setInitialLoading(false);
 
-    // Fetch data
     async function loadData() {
       try {
         const [prodRes, catRes] = await Promise.all([
@@ -41,7 +39,6 @@ export default function HomePage() {
     loadData();
   }, []);
 
-  // Show loading spinner only on the very first visit
   if (initialLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-luxury-ivory">
@@ -53,7 +50,6 @@ export default function HomePage() {
     );
   }
 
-  // Age gate — blocks content until 18+ verified
   if (!ageVerified) {
     return (
       <div className="min-h-screen bg-luxury-black">
@@ -66,61 +62,70 @@ export default function HomePage() {
     <>
       <Header />
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative h-[80vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-60"
-            style={{
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1512436991641-6748432a39ad?w=1600&q=80)",
-            }}
+        {/* ─── HERO ─── */}
+        <section className="relative h-[85vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
+          {/* Background image as IMG tag for better rendering */}
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6748432a39ad?w=1600&q=85"
+            alt="Luxury fur fashion editorial"
+            className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/40 via-transparent to-luxury-black/80" />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-luxury-black/30 to-transparent" />
+          {/* Content */}
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-luxury-gold mb-4">
+            <p className="font-body text-xs md:text-sm tracking-[0.35em] uppercase text-luxury-gold font-semibold mb-4">
               The Art of Fur Since 1985
             </p>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-luxury-ivory mb-6 leading-tight">
+            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-luxury-ivory mb-6 leading-tight font-bold">
               Timeless
               <br />
               <span className="text-luxury-gold">Elegance</span>
             </h1>
-            <p className="font-body text-sm md:text-base text-luxury-gray max-w-md mb-8">
+            <p className="font-body text-sm md:text-base text-luxury-gray max-w-md mb-10 leading-relaxed">
               Discover our latest collection of handcrafted fur fashion,
               where heritage meets contemporary design.
             </p>
-            <Link href="/products" className="btn-gold text-xs md:text-sm">
-              Explore Collection
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/products" className="btn-gold text-sm md:text-base font-semibold !px-10 !py-4">
+                Explore Collection
+              </Link>
+              <Link
+                href="/#story"
+                className="btn-secondary text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
+              >
+                Our Story
+              </Link>
+            </div>
           </div>
         </section>
 
-        {/* Categories */}
-        <section className="py-16 md:py-24 px-4">
+        {/* ─── CATEGORIES ─── */}
+        <section className="py-20 md:py-28 px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <p className="section-subtitle">Curated Collections</p>
-              <h2 className="section-title mt-2">Browse by Category</h2>
+            <div className="text-center mb-14">
+              <p className="section-subtitle font-semibold tracking-[0.25em]">Curated Collections</p>
+              <h2 className="section-title mt-3 font-bold">Browse by Category</h2>
               <div className="luxury-divider mx-auto" />
             </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
               {categories.map((cat) => (
                 <Link
                   key={cat.id}
                   href={`/products?category=${cat.id}`}
                   className="group relative overflow-hidden aspect-[3/4] bg-luxury-gray-light card-hover"
                 >
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                    style={{ backgroundImage: `url(${cat.image})` }}
+                  <img
+                    src={cat.image}
+                    alt={cat.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="font-display text-sm md:text-base text-luxury-ivory">
+                    <h3 className="font-display text-sm md:text-base text-luxury-ivory font-semibold">
                       {cat.name}
                     </h3>
-                    <p className="text-xs text-luxury-gray mt-1">
+                    <p className="text-xs text-luxury-gray mt-0.5">
                       {cat.productCount} pieces
                     </p>
                   </div>
@@ -130,35 +135,42 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Featured Products */}
-        <section className="py-16 md:py-24 px-4 bg-luxury-cream">
+        {/* ─── FEATURED PRODUCTS ─── */}
+        <section className="py-20 md:py-28 px-4 bg-luxury-cream">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <p className="section-subtitle">Editor&apos;s Pick</p>
-              <h2 className="section-title mt-2">Featured Pieces</h2>
+            <div className="text-center mb-14">
+              <p className="section-subtitle font-semibold tracking-[0.25em]">Editor&apos;s Selection</p>
+              <h2 className="section-title mt-3 font-bold">Featured Pieces</h2>
               <div className="luxury-divider mx-auto" />
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-              {featured.slice(0, 8).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-
+            {!dataLoaded ? (
+              <div className="flex justify-center py-12">
+                <div className="w-8 h-8 border-2 border-luxury-gold border-t-transparent rounded-full animate-spin" />
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                {featured.slice(0, 8).map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+            )}
             <div className="text-center mt-12">
-              <Link href="/products" className="btn-secondary">
-                View All Collection
+              <Link
+                href="/products"
+                className="btn-secondary text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
+              >
+                View All Collection →
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Brand Story */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* ─── BRAND STORY ─── */}
+        <section id="story" className="py-20 md:py-28 px-4">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div>
-              <p className="section-subtitle">Heritage &amp; Craftsmanship</p>
-              <h2 className="section-title mt-2 mb-6">
+              <p className="section-subtitle font-semibold tracking-[0.25em]">Heritage &amp; Craftsmanship</p>
+              <h2 className="section-title mt-3 mb-6 font-bold">
                 Four Decades of
                 <br />
                 <span className="text-luxury-gold">Mastery</span>
@@ -170,45 +182,52 @@ export default function HomePage() {
                 Each piece is a testament to the meticulous skill of our master
                 artisans, who select only the finest pelts from ethical sources.
               </p>
-              <p className="font-body text-sm text-luxury-gray leading-relaxed">
+              <p className="font-body text-sm md:text-base text-luxury-gray leading-relaxed mb-8">
                 From the sprawling fur markets of Scandinavia to the auction houses
                 of North America, we travel the globe to bring you the world&rsquo;s
                 most exquisite fur fashion.
               </p>
+              <Link
+                href="/products"
+                className="btn-primary text-sm md:text-base font-semibold !px-10 !py-4"
+              >
+                Shop the Collection
+              </Link>
             </div>
             <div className="relative aspect-[4/5] bg-luxury-gray-light overflow-hidden">
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80)",
-                }}
+              <img
+                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=85"
+                alt="Luxury fashion craftsmanship"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-16 md:py-24 px-4 bg-luxury-charcoal">
+        {/* ─── CTA ─── */}
+        <section className="py-20 md:py-28 px-4 bg-luxury-charcoal">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-3xl md:text-5xl text-luxury-ivory mb-4">
+            <h2 className="font-display text-3xl md:text-5xl text-luxury-ivory mb-4 font-bold leading-tight">
               Ready to Experience
               <br />
               <span className="text-luxury-gold">True Luxury</span>?
             </h2>
-            <p className="font-body text-sm md:text-base text-luxury-gray mb-8 max-w-lg mx-auto">
+            <p className="font-body text-sm md:text-base text-luxury-gray mb-10 max-w-lg mx-auto leading-relaxed">
               Browse our complete collection or visit our flagship boutique
               in Milan for a personal consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/products" className="btn-gold">
+              <Link
+                href="/products"
+                className="btn-gold text-sm md:text-base font-semibold !px-10 !py-4"
+              >
                 Shop Collection
               </Link>
               <a
                 href="https://maps.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary !border-luxury-ivory !text-luxury-ivory hover:!bg-luxury-ivory hover:!text-luxury-charcoal"
+                className="btn-secondary !border-luxury-ivory !text-luxury-ivory hover:!bg-luxury-ivory hover:!text-luxury-charcoal text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
               >
                 Visit Our Boutique
               </a>
