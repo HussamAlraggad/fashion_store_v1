@@ -5,42 +5,12 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-charcoal: #1A1A1A;
-    --color-ivory: #FFFFF0;
-    --color-cream: #F5F0E8;
-    --color-gold: #C9A84C;
-    --color-gold-light: #E8D48B;
-    --color-black: #0A0A0A;
-    --color-white: #FFFFFF;
-    --color-gray-light: #F3F3F3;
-    --color-gray: #888888;
-    --color-gray-dark: #444444;
-  }
-
-  html.dark {
-    --color-charcoal: #E8E4DD;
-    --color-ivory: #141414;
-    --color-cream: #1E1E1E;
-    --color-gold: #D4AF37;
-    --color-gold-light: #B8962E;
-    --color-black: #FFFFFF;
-    --color-white: #0A0A0A;
-    --color-gray-light: #2A2A2A;
-    --color-gray: #999999;
-    --color-gray-dark: #CCCCCC;
-  }
-
   * {
     box-sizing: border-box;
   }
 
   html {
     scroll-behavior: smooth;
-  }
-
-  html.dark body {
-    @apply bg-luxury-ivory text-luxury-charcoal;
   }
 
   body {
@@ -53,11 +23,7 @@
   }
 
   ::selection {
-    @apply bg-luxury-gold/30 text-luxury-charcoal;
-  }
-
-  html.dark ::selection {
-    background-color: rgba(212, 175, 55, 0.3);
+    @apply bg-luxury-gold text-luxury-charcoal;
   }
 }
 
@@ -85,8 +51,10 @@
   .btn-ghost {
     @apply inline-flex items-center justify-center px-6 py-2 
            text-luxury-charcoal font-body text-sm font-medium
-           hover:bg-luxury-gray-light/50 
            transition-colors duration-200;
+  }
+  .btn-ghost:hover {
+    background-color: color-mix(in srgb, #F3F3F3 50%, transparent);
   }
 
   .btn-gold {
@@ -100,12 +68,15 @@
   }
 
   .input-field {
-    @apply w-full px-4 py-3 
-           bg-luxury-white border border-luxury-gray/30 
-           font-body text-sm text-luxury-charcoal
-           placeholder:text-luxury-gray/60
-           focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold/30
-           transition-all duration-200;
+    @apply w-full px-4 py-3 bg-luxury-white font-body text-sm text-luxury-charcoal focus:outline-none focus:border-luxury-gold transition-all duration-200;
+    border: 1px solid color-mix(in srgb, #888888 30%, transparent);
+  }
+  .input-field::placeholder {
+    color: color-mix(in srgb, #888888 60%, transparent);
+  }
+  .input-field:focus {
+    box-shadow: 0 0 0 1px color-mix(in srgb, #C9A84C 30%, transparent);
+    border-color: #C9A84C;
   }
 
   .section-title {
@@ -141,3 +112,51 @@
     display: none;
   }
 }
+
+/* Dark theme overrides */
+html.dark body {
+  background-color: #141414 !important;
+  color: #E8E4DD !important;
+}
+
+html.dark .bg-luxury-ivory { background-color: #141414 !important; }
+html.dark .bg-luxury-cream { background-color: #1E1E1E !important; }
+html.dark .bg-luxury-white { background-color: #0A0A0A !important; }
+html.dark .bg-luxury-charcoal { background-color: #E8E4DD !important; }
+html.dark .bg-luxury-black { background-color: #FFFFFF !important; }
+html.dark .bg-luxury-gray-light { background-color: #2A2A2A !important; }
+html.dark .text-luxury-charcoal { color: #E8E4DD !important; }
+html.dark .text-luxury-gray { color: #999999 !important; }
+html.dark .text-luxury-gray-dark { color: #CCCCCC !important; }
+html.dark .text-luxury-ivory { color: #141414 !important; }
+html.dark .text-luxury-black { color: #FFFFFF !important; }
+html.dark .border-luxury-charcoal { border-color: #E8E4DD !important; }
+html.dark .border-luxury-gray\/10 { border-color: rgba(153, 153, 153, 0.1) !important; }
+html.dark .border-luxury-gray\/20 { border-color: rgba(153, 153, 153, 0.2) !important; }
+html.dark .border-luxury-gray\/30 { border-color: rgba(153, 153, 153, 0.3) !important; }
+html.dark .border-luxury-gray\/5 { border-color: rgba(153, 153, 153, 0.05) !important; }
+html.dark .border-luxury-gold { border-color: #D4AF37 !important; }
+html.dark .bg-gradient-to-r { background-image: none !important; background: linear-gradient(to right, rgba(20,20,20,0.9), rgba(20,20,20,0.6), rgba(20,20,20,0.2)) !important; }
+html.dark .bg-gradient-to-t { background-image: none !important; background: linear-gradient(to top, rgba(20,20,20,0.8), transparent, transparent) !important; }
+html.dark .btn-primary { background-color: #E8E4DD !important; color: #141414 !important; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3) !important; }
+html.dark .btn-primary:hover { background-color: #FFFFFF !important; }
+html.dark .btn-secondary { border-color: #E8E4DD !important; color: #E8E4DD !important; }
+html.dark .btn-secondary:hover { background-color: #E8E4DD !important; color: #141414 !important; }
+html.dark .btn-gold { background-color: #D4AF37 !important; color: #141414 !important; }
+html.dark .btn-gold:hover { background-color: #B8962E !important; }
+html.dark .border-luxury-gray\/10 { border-color: rgba(153, 153, 153, 0.1) !important; }
+html.dark .btn-ghost:hover { background-color: color-mix(in srgb, #2A2A2A 50%, transparent) !important; }
+html.dark .card-hover:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important; }
+html.dark input, html.dark select, html.dark textarea { background-color: #0A0A0A !important; color: #E8E4DD !important; border-color: rgba(153,153,153,0.3) !important; }
+html.dark .input-field:focus { border-color: #D4AF37 !important; box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.3) !important; }
+html.dark ::selection { background-color: #D4AF37 !important; color: #141414 !important; }
+html.dark .bg-white { background-color: #1E1E1E !important; }
+html.dark .text-luxury-gold { color: #D4AF37 !important; }
+html.dark .bg-luxury-gold { background-color: #D4AF37 !important; }
+html.dark .bg-luxury-goldLight { background-color: #B8962E !important; }
+html.dark .hover\:text-luxury-gold:hover { color: #D4AF37 !important; }
+html.dark .hover\:bg-luxury-cream:hover { background-color: #2A2A2A !important; }
+html.dark .hover\:bg-luxury-gray-light\/50:hover { background-color: rgba(42,42,42,0.5) !important; }
+html.dark .hover\:bg-luxury-charcoal:hover { background-color: #E8E4DD !important; }
+html.dark .hover\:text-luxury-ivory:hover { color: #141414 !important; }
+html.dark .hover\:text-luxury-charcoal:hover { color: #E8E4DD !important; }
