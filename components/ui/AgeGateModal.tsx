@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 interface AgeGateModalProps {
-  onVerified?: () => void;
+  onVerified: () => void;
 }
 
 export default function AgeGateModal({ onVerified }: AgeGateModalProps) {
@@ -12,7 +11,6 @@ export default function AgeGateModal({ onVerified }: AgeGateModalProps) {
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter();
 
   function calculateAge(birthDate: Date): number {
     const today = new Date();
@@ -48,11 +46,13 @@ export default function AgeGateModal({ onVerified }: AgeGateModalProps) {
     const age = calculateAge(birthDate);
 
     if (age >= 18) {
-      // Store age verification in session
       sessionStorage.setItem("age_verified", "true");
-      sessionStorage.setItem("age_birthdate", `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`);
-      if (onVerified) onVerified();
-      router.refresh();
+      sessionStorage.setItem(
+        "age_birthdate",
+        `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`
+      );
+      // Just call onVerified — let React re-render naturally
+      onVerified();
     } else {
       setError("You must be 18 or older to access this website.");
     }
@@ -126,10 +126,7 @@ export default function AgeGateModal({ onVerified }: AgeGateModalProps) {
           <p className="text-red-500 font-body text-sm mb-4">{error}</p>
         )}
 
-        <button
-          onClick={handleVerify}
-          className="btn-primary w-full"
-        >
+        <button onClick={handleVerify} className="btn-primary w-full">
           Verify &amp; Enter
         </button>
 

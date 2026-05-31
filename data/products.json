@@ -10,9 +10,9 @@
     "compareAtPrice": 29900.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/mink-coat-1/800/1000",
-      "https://picsum.photos/seed/mink-coat-2/800/1000",
-      "https://picsum.photos/seed/mink-coat-3/800/1000"
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
+      "https://images.unsplash.com/photo-1617127365659-c47c8646e3f7?w=800&q=80",
+      "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800&q=80"
     ],
     "material": "Russian Mink",
     "origin": "Russia",
@@ -38,8 +38,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fox-stole-1/800/1000",
-      "https://picsum.photos/seed/fox-stole-2/800/1000"
+      "https://images.unsplash.com/photo-1608236415056-3c6cc9e085d4?w=800&q=80",
+      "https://images.unsplash.com/photo-1600087626014-e8b1b5e7c5c5?w=800&q=80"
     ],
     "material": "Silver Fox",
     "origin": "Scandinavia",
@@ -65,9 +65,9 @@
     "compareAtPrice": 21000.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/sable-jacket-1/800/1000",
-      "https://picsum.photos/seed/sable-jacket-2/800/1000",
-      "https://picsum.photos/seed/sable-jacket-3/800/1000"
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80"
     ],
     "material": "Russian Sable",
     "origin": "Siberia, Russia",
@@ -93,8 +93,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-hat-1/800/1000",
-      "https://picsum.photos/seed/fur-hat-2/800/1000"
+      "https://images.unsplash.com/photo-1570312010562-56e48214c27f?w=800&q=80",
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -120,8 +120,8 @@
     "compareAtPrice": 1500.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/faux-leopard-1/800/1000",
-      "https://picsum.photos/seed/faux-leopard-2/800/1000"
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
     ],
     "material": "Modacrylic Faux Fur",
     "origin": "Italy",
@@ -147,8 +147,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/chinchilla-vest-1/800/1000",
-      "https://picsum.photos/seed/chinchilla-vest-2/800/1000"
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+      "https://images.unsplash.com/photo-1602293589931-45aaba92ba7b?w=800&q=80"
     ],
     "material": "Chinchilla",
     "origin": "Argentina",
@@ -174,7 +174,7 @@
     "compareAtPrice": 2200.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fox-pillow-1/800/1000"
+      "https://images.unsplash.com/photo-1602872030217-4180b132578b?w=800&q=80"
     ],
     "material": "Fox Fur / Shearling",
     "origin": "Finland",
@@ -200,8 +200,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/mink-gloves-1/800/1000",
-      "https://picsum.photos/seed/mink-gloves-2/800/1000"
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80",
+      "https://images.unsplash.com/photo-1570312010562-56e48214c27f?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -227,7 +227,7 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/coyote-trim-1/800/1000"
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
     ],
     "material": "Coyote Fur",
     "origin": "Canada",
@@ -253,8 +253,8 @@
     "compareAtPrice": 350.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/faux-snood-1/800/1000",
-      "https://picsum.photos/seed/faux-snood-2/800/1000"
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
     ],
     "material": "Microfiber Faux Fur",
     "origin": "China",
@@ -280,8 +280,8 @@
     "compareAtPrice": 18000.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/beaver-bomber-1/800/1000",
-      "https://picsum.photos/seed/beaver-bomber-2/800/1000"
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80",
+      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80"
     ],
     "material": "Sheared Beaver",
     "origin": "USA",
@@ -307,8 +307,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/lynx-shawl-1/800/1000",
-      "https://picsum.photos/seed/lynx-shawl-2/800/1000"
+      "https://images.unsplash.com/photo-1608236415056-3c6cc9e085d4?w=800&q=80",
+      "https://images.unsplash.com/photo-1600087626014-e8b1b5e7c5c5?w=800&q=80"
     ],
     "material": "Lynx Fur",
     "origin": "Canada",
@@ -334,7 +334,7 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-earmuffs-1/800/1000"
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -360,8 +360,8 @@
     "compareAtPrice": 1100.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/faux-gilet-1/800/1000",
-      "https://picsum.photos/seed/faux-gilet-2/800/1000"
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+      "https://images.unsplash.com/photo-1602293589931-45aaba92ba7b?w=800&q=80"
     ],
     "material": "Acrylic Faux Fur",
     "origin": "Portugal",
@@ -387,8 +387,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/trapper-hat-1/800/1000",
-      "https://picsum.photos/seed/trapper-hat-2/800/1000"
+      "https://images.unsplash.com/photo-1570312010562-56e48214c27f?w=800&q=80",
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
     ],
     "material": "Fisher Fur",
     "origin": "Canada",
@@ -414,7 +414,7 @@
     "compareAtPrice": 7800.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/mink-throw-1/800/1000"
+      "https://images.unsplash.com/photo-1602872030217-4180b132578b?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "Greece",
@@ -440,8 +440,8 @@
     "compareAtPrice": 38000.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/sable-stole-1/800/1000",
-      "https://picsum.photos/seed/sable-stole-2/800/1000"
+      "https://images.unsplash.com/photo-1608236415056-3c6cc9e085d4?w=800&q=80",
+      "https://images.unsplash.com/photo-1600087626014-e8b1b5e7c5c5?w=800&q=80"
     ],
     "material": "Barguzin Sable",
     "origin": "Siberia, Russia",
@@ -467,8 +467,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/pom-scarf-1/800/1000",
-      "https://picsum.photos/seed/pom-scarf-2/800/1000"
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
     ],
     "material": "Faux Fur / Cashmere Blend",
     "origin": "Italy",
@@ -494,8 +494,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fox-capelet-1/800/1000",
-      "https://picsum.photos/seed/fox-capelet-2/800/1000"
+      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80"
     ],
     "material": "Red Fox",
     "origin": "Sweden",
@@ -521,7 +521,7 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-keychain-1/800/1000"
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
     ],
     "material": "Raccoon Fur",
     "origin": "USA",
@@ -547,7 +547,7 @@
     "compareAtPrice": 950.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-mittens-1/800/1000"
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
     ],
     "material": "Sheared Mink / Shearling",
     "origin": "Finland",
@@ -573,8 +573,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/faux-bolero-1/800/1000",
-      "https://picsum.photos/seed/faux-bolero-2/800/1000"
+      "https://images.unsplash.com/photo-1602293589931-45aaba92ba7b?w=800&q=80",
+      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80"
     ],
     "material": "Polyester Faux Fur",
     "origin": "France",
@@ -600,7 +600,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-headband-1/800/1000"
+      "https://images.unsplash.com/photo-1570312010562-56e48214c27f?w=800&q=80",
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -626,7 +627,7 @@
     "compareAtPrice": 3400.00,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-rug-1/800/1000"
+      "https://images.unsplash.com/photo-1602872030217-4180b132578b?w=800&q=80"
     ],
     "material": "Polyester Faux Fur",
     "origin": "Turkey",
@@ -652,7 +653,7 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://picsum.photos/seed/fur-belt-1/800/1000"
+      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -666,5 +667,140 @@
     "citesCompliant": true,
     "sku": "MNK-BELT-025",
     "createdAt": "2025-11-05"
+  },
+  {
+    "id": "prod-026",
+    "name": "Fur-Trimmed Silk Kimono",
+    "slug": "fur-trimmed-silk-kimono",
+    "categoryId": "cat-intimate",
+    "category": "Intimate Apparel",
+    "description": "An opulent silk charmeuse kimono trimmed with natural Russian sable fur along the collar and hem. The lightweight silk drapes sensuously, while the fur adds a decadent weight and warmth. Ties at the waist with a silk sash.",
+    "price": 4800.00,
+    "compareAtPrice": 5800.00,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://images.unsplash.com/photo-1602293589931-45aaba92ba7b?w=800&q=80"
+    ],
+    "material": "Silk / Russian Sable",
+    "origin": "Italy",
+    "color": "Champagne / Sable",
+    "sizes": ["XS", "S", "M", "L"],
+    "inStock": true,
+    "stockCount": 4,
+    "featured": true,
+    "rating": 4.7,
+    "reviewCount": 9,
+    "citesCompliant": true,
+    "sku": "KMN-SBL-026",
+    "createdAt": "2025-12-10"
+  },
+  {
+    "id": "prod-027",
+    "name": "Mink Fur Bodysuit",
+    "slug": "mink-fur-bodysuit",
+    "categoryId": "cat-intimate",
+    "category": "Intimate Apparel",
+    "description": "A breathtaking sheared mink bodysuit with adjustable spaghetti straps and a snap-button gusset. The ultra-soft fur contours to the body, creating a second-skin sensation. Lined in stretch silk for comfort. A true statement piece for the confident connoisseur.",
+    "price": 6200.00,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80"
+    ],
+    "material": "Sheared Mink",
+    "origin": "France",
+    "color": "Espresso",
+    "sizes": ["XS", "S", "M", "L"],
+    "inStock": true,
+    "stockCount": 2,
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 6,
+    "citesCompliant": true,
+    "sku": "BDS-MNK-027",
+    "createdAt": "2025-12-15"
+  },
+  {
+    "id": "prod-028",
+    "name": "Fur Garter Belt Set",
+    "slug": "fur-garter-belt-set",
+    "categoryId": "cat-intimate",
+    "category": "Intimate Apparel",
+    "description": "A seductive garter belt crafted from plush rabbit fur with adjustable satin straps and gold-toned hardware. Matching fur-trimmed thigh holsters complete the set. The fur waistband is elasticated for a perfect fit. Presented in a velvet-lidded gift box.",
+    "price": 2800.00,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80",
+      "https://images.unsplash.com/photo-1542295669297-4d352b042bde?w=800&q=80"
+    ],
+    "material": "Rabbit Fur / Satin",
+    "origin": "Italy",
+    "color": "Noir / Gold",
+    "sizes": ["S", "M", "L"],
+    "inStock": true,
+    "stockCount": 6,
+    "featured": false,
+    "rating": 4.5,
+    "reviewCount": 14,
+    "citesCompliant": true,
+    "sku": "GRT-SET-028",
+    "createdAt": "2025-11-20"
+  },
+  {
+    "id": "prod-029",
+    "name": "Fox Fur Stole Lingerie Set",
+    "slug": "fox-fur-stole-lingerie-set",
+    "categoryId": "cat-intimate",
+    "category": "Intimate Apparel",
+    "description": "A matching set featuring a delicate lace-and-silk babydoll complemented by an oversized silver fox fur stole. The babydoll features adjustable straps and a stretch lace back, while the fur stole drapes over the shoulders for the ultimate in luxurious boudoir fashion.",
+    "price": 5500.00,
+    "compareAtPrice": 6500.00,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+    ],
+    "material": "Silver Fox / French Lace",
+    "origin": "France",
+    "color": "Ivory / Silver",
+    "sizes": ["S", "M", "L"],
+    "inStock": true,
+    "stockCount": 3,
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "citesCompliant": true,
+    "sku": "LNG-FOX-029",
+    "createdAt": "2025-12-20"
+  },
+  {
+    "id": "prod-030",
+    "name": "Mink Fur-Trimmed Babydoll",
+    "slug": "mink-fur-trimmed-babydoll",
+    "categoryId": "cat-intimate",
+    "category": "Intimate Apparel",
+    "description": "A seductive babydoll silhouette in sheer mesh, lavishly trimmed with sheared mink fur along the neckline and hem. The empire waist features a delicate satin ribbon, and the built-in underwire cups provide shape and support. A boudoir essential for the modern femme fatale.",
+    "price": 3500.00,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80"
+    ],
+    "material": "Sheared Mink / Mesh",
+    "origin": "Italy",
+    "color": "Black / Champagne",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "inStock": true,
+    "stockCount": 5,
+    "featured": true,
+    "rating": 4.6,
+    "reviewCount": 8,
+    "citesCompliant": true,
+    "sku": "BDL-MNK-030",
+    "createdAt": "2025-12-25"
   }
 ]

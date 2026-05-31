@@ -56,4 +56,27 @@
 
 ---
 
-*(Append new entries below this line)*
+### [Date: 2026-05-31] - Hotfix: Age Gate Rendering + Product Expansion + Image Quality
+
+**Completed:**
+* Fixed age gate rendering bug — removed `router.refresh()` from `AgeGateModal` that was causing a full page refresh and state reset. Now uses pure React state transition via `onVerified()` callback. Page loads content immediately after verification without flickering.
+* Added **Intimate Apparel** category with 5 luxury fur lingerie/boudoir products (fur-trimmed silk kimono, mink bodysuit, garter belt set, fox fur lingerie set, mink babydoll).
+* Replaced ALL placeholder images — migrated from `picsum.photos` (which served random/abstract images) to curated Unsplash editorial fashion photos that show actual luxury apparel, models, and fashion aesthetics.
+
+**Key Decisions:**
+* **Age Gate Flow:** Age verification is now purely client-side state driven. `sessionStorage` is written, then React state updates trigger content render. No `router.refresh()` intervention needed.
+* **Data Loading:** Added `dataLoaded` state to gracefully handle the case where product data fetch completes after age verification.
+* **Imagery:** All 30 products now use Unsplash fashion photography (fur coats, editorial shots, accessories, luxury aesthetics) instead of random generator images.
+
+**Mistakes & Fixes:**
+* ❌ `AgeGateModal` used `router.refresh()` after verification → caused page flash and state loss. → ✅ Removed `router.refresh()`, rely on React state re-render.
+* ❌ Products only covered outerwear, stoles, accessories, faux, home decor — missed Intimate Apparel. → ✅ Added 5 intimate apparel products with matching category.
+* ❌ All product images used `picsum.photos/seed/xxx` which generates random abstract/landscape images regardless of seed name → confusing and unprofessional. → ✅ Switched to curated Unsplash fashion photography URLs.
+
+**Products Now: 30 total (up from 25) | Categories: 6 total (up from 5)**
+
+**Next Steps:**
+* Phase 2: Strengthen auth (proper session handling, middleware enforcement).
+* Phase 6: GDPR banner, wishlist, store location, mobile audit.
+
+---

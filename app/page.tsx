@@ -10,15 +10,16 @@ import type { Product, Category } from "@/lib/api";
 
 export default function HomePage() {
   const [ageVerified, setAgeVerified] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [initialLoading, setInitialLoading] = useState(true);
   const [featured, setFeatured] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
-    // Check age verification
+    // Check age verification — runs once on mount
     const verified = sessionStorage.getItem("age_verified") === "true";
     setAgeVerified(verified);
-    setLoading(false);
+    setInitialLoading(false);
 
     // Fetch data
     async function loadData() {
@@ -29,16 +30,19 @@ export default function HomePage() {
         ]);
         const products = await prodRes.json();
         const cats = await catRes.json();
-        setFeatured(products);
-        setCategories(cats);
+        setFeatured(Array.isArray(products) ? products : []);
+        setCategories(Array.isArray(cats) ? cats : []);
       } catch (err) {
         console.error("Failed to load data", err);
+      } finally {
+        setDataLoaded(true);
       }
     }
     loadData();
   }, []);
 
-  if (loading) {
+  // Show loading spinner only on the very first visit
+  if (initialLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-luxury-ivory">
         <div className="text-center">
@@ -49,6 +53,7 @@ export default function HomePage() {
     );
   }
 
+  // Age gate — blocks content until 18+ verified
   if (!ageVerified) {
     return (
       <div className="min-h-screen bg-luxury-black">
