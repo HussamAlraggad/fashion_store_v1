@@ -9,47 +9,55 @@ import ProductCard from "@/components/product/ProductCard";
 import type { Product, Category } from "@/lib/api";
 
 export default function HomePage() {
-  const [ageVerified, setAgeVerified] = useState(false);
-  const [initialLoading, setInitialLoading] = useState(true);
+  const [ageVerified, setAgeVerified] = useState<boolean | null>(null);
   const [featured, setFeatured] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
-  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
-    const verified = sessionStorage.getItem("age_verified") === "true";
-    setAgeVerified(verified);
-    setInitialLoading(false);
+    // Check age verification immediately on client
+    try {
+      const verified = sessionStorage.getItem("age_verified") === "true";
+      setAgeVerified(verified);
+    } catch {
+      setAgeVerified(false);
+    }
 
+    // Fetch data
     async function loadData() {
       try {
         const [prodRes, catRes] = await Promise.all([
           fetch("/api/products?featured=true"),
           fetch("/api/categories"),
         ]);
-        const products = await prodRes.json();
-        const cats = await catRes.json();
-        setFeatured(Array.isArray(products) ? products : []);
-        setCategories(Array.isArray(cats) ? cats : []);
+        if (prodRes.ok) {
+          const products = await prodRes.json();
+          setFeatured(Array.isArray(products) ? products : []);
+        }
+        if (catRes.ok) {
+          const cats = await catRes.json();
+          setCategories(Array.isArray(cats) ? cats : []);
+        }
       } catch (err) {
-        console.error("Failed to load data", err);
-      } finally {
-        setDataLoaded(true);
+        console.error("Data fetch error:", err);
       }
     }
     loadData();
   }, []);
 
-  if (initialLoading) {
+  // Still loading (SSR or very first render)
+  if (ageVerified === null) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-luxury-ivory">
         <div className="text-center">
-          <div className="w-8 h-8 border-2 border-luxury-gold border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="font-body text-sm text-luxury-gray">Loading…</p>
+          <h1 className="font-display text-xl tracking-wider text-luxury-charcoal">
+            MAISON<span className="text-luxury-gold"> FOURRURE</span>
+          </h1>
         </div>
       </div>
     );
   }
 
+  // Age gate
   if (!ageVerified) {
     return (
       <div className="min-h-screen bg-luxury-black">
@@ -58,21 +66,19 @@ export default function HomePage() {
     );
   }
 
+  // Full content
   return (
     <>
       <Header />
       <main className="flex-1">
-        {/* ─── HERO ─── */}
+        {/* HERO */}
         <section className="relative h-[85vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
-          {/* Background image as IMG tag for better rendering */}
           <img
             src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=1600&q=85"
             alt="Luxury fur fashion editorial"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-luxury-black/30 to-transparent" />
-          {/* Content */}
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <p className="font-body text-xs md:text-sm tracking-[0.35em] uppercase text-luxury-gold font-semibold mb-4">
               The Art of Fur Since 1985
@@ -100,7 +106,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ─── CATEGORIES ─── */}
+        {/* CATEGORIES */}
         <section className="py-20 md:py-28 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-14">
@@ -135,7 +141,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ─── FEATURED PRODUCTS ─── */}
+        {/* FEATURED PRODUCTS */}
         <section className="py-20 md:py-28 px-4 bg-luxury-cream">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-14">
@@ -143,7 +149,7 @@ export default function HomePage() {
               <h2 className="section-title mt-3 font-bold">Featured Pieces</h2>
               <div className="luxury-divider mx-auto" />
             </div>
-            {!dataLoaded ? (
+            {featured.length === 0 ? (
               <div className="flex justify-center py-12">
                 <div className="w-8 h-8 border-2 border-luxury-gold border-t-transparent rounded-full animate-spin" />
               </div>
@@ -155,17 +161,14 @@ export default function HomePage() {
               </div>
             )}
             <div className="text-center mt-12">
-              <Link
-                href="/products"
-                className="btn-secondary text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
-              >
+              <Link href="/products" className="btn-secondary text-sm md:text-base font-semibold !px-10 !py-4 !border-2">
                 View All Collection →
               </Link>
             </div>
           </div>
         </section>
 
-        {/* ─── BRAND STORY ─── */}
+        {/* BRAND STORY */}
         <section id="story" className="py-20 md:py-28 px-4">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div>
@@ -179,18 +182,13 @@ export default function HomePage() {
               <p className="font-body text-sm md:text-base text-luxury-gray-dark leading-relaxed mb-6">
                 Nestled in the heart of Milan&rsquo;s fashion district, our atelier has
                 been perfecting the art of fur craftsmanship for four generations.
-                Each piece is a testament to the meticulous skill of our master
-                artisans, who select only the finest pelts from ethical sources.
               </p>
               <p className="font-body text-sm md:text-base text-luxury-gray leading-relaxed mb-8">
                 From the sprawling fur markets of Scandinavia to the auction houses
                 of North America, we travel the globe to bring you the world&rsquo;s
                 most exquisite fur fashion.
               </p>
-              <Link
-                href="/products"
-                className="btn-primary text-sm md:text-base font-semibold !px-10 !py-4"
-              >
+              <Link href="/products" className="btn-primary text-sm md:text-base font-semibold !px-10 !py-4">
                 Shop the Collection
               </Link>
             </div>
@@ -204,7 +202,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ─── CTA ─── */}
+        {/* CTA */}
         <section className="py-20 md:py-28 px-4 bg-luxury-charcoal">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-5xl text-luxury-ivory mb-4 font-bold leading-tight">
@@ -217,10 +215,7 @@ export default function HomePage() {
               in Milan for a personal consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/products"
-                className="btn-gold text-sm md:text-base font-semibold !px-10 !py-4"
-              >
+              <Link href="/products" className="btn-gold text-sm md:text-base font-semibold !px-10 !py-4">
                 Shop Collection
               </Link>
               <a

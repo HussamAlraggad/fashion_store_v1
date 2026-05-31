@@ -1,7 +1,6 @@
 "use client";
 
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
 
 interface AuthUser {
   id: string;
@@ -18,27 +17,22 @@ interface AuthState {
   logout: () => void;
 }
 
-export const useAuthStore = create<AuthState>()(
-  persist(
-    (set, get) => ({
+// Store WITHOUT persist — avoids SSR localStorage crashes.
+// For prototype, auth is managed via sessionStorage anyway.
+export const useAuthStore = create<AuthState>()((set) => ({
+  user: null,
+  isAuthenticated: false,
+  isAdmin: false,
+  login: (user: AuthUser) =>
+    set({
+      user,
+      isAuthenticated: true,
+      isAdmin: user.role === "admin",
+    }),
+  logout: () =>
+    set({
       user: null,
       isAuthenticated: false,
       isAdmin: false,
-      login: (user: AuthUser) =>
-        set({
-          user,
-          isAuthenticated: true,
-          isAdmin: user.role === "admin",
-        }),
-      logout: () =>
-        set({
-          user: null,
-          isAuthenticated: false,
-          isAdmin: false,
-        }),
     }),
-    {
-      name: "auth-storage",
-    }
-  )
-);
+}));
