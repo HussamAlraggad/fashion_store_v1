@@ -198,7 +198,7 @@ export default function HomePage() {
             </div>
             <div className="relative aspect-[4/5] bg-luxury-gray-light overflow-hidden">
               <img
-                src="/images/fashion-portrait-02.jpg"
+                src="https://burst.shopifycdn.com/photos/snowfall-on-winter-fashion.jpg?width=800"
                 alt="Luxury fashion craftsmanship"
                 className="absolute inset-0 w-full h-full object-cover"
               />

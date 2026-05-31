@@ -1,21 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import { useAuthStore } from "@/store/authStore";
 import { useCartStore } from "@/store/cartStore";
-
-const NAV_ITEMS = [
-  { label: "Collection", href: "/products" },
-  { label: "Categories", href: "/products", dropdown: true },
-  { label: "About", href: "/#story" },
-  { label: "Cart", href: "/cart" },
-];
 
 export default function Header() {
   const { user, isAuthenticated, isAdmin, logout } = useAuthStore();
   const { items } = useCartStore();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const router = useRouter();
+
+  const handleAboutClick = useCallback(() => {
+    const isHome = window.location.pathname === "/";
+    if (isHome) {
+      const el = document.getElementById("story");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "/#story";
+    }
+  }, []);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const cartCount = items.reduce((acc, i) => acc + i.quantity, 0);
@@ -78,12 +83,12 @@ export default function Header() {
             </div>
 
             {/* About */}
-            <Link
-              href="/#story"
+            <button
+              onClick={handleAboutClick}
               className="px-4 py-2 font-body text-sm tracking-wide text-luxury-charcoal hover:text-luxury-gold transition-colors"
             >
               About
-            </Link>
+            </button>
 
             {/* Cart — always visible */}
             <Link
@@ -163,9 +168,12 @@ export default function Header() {
               <Link href="/products?category=cat-accessories" className="py-2 pl-4 font-body text-sm text-luxury-gray" onClick={() => setMobileOpen(false)}>
                 — Accessories
               </Link>
-              <Link href="/#story" className="py-2 font-body text-sm tracking-wide" onClick={() => setMobileOpen(false)}>
+              <button
+                onClick={() => { handleAboutClick(); setMobileOpen(false); }}
+                className="py-2 font-body text-sm tracking-wide text-left"
+              >
                 About
-              </Link>
+              </button>
               <Link href="/cart" className="py-2 font-body text-sm tracking-wide" onClick={() => setMobileOpen(false)}>
                 Cart {cartCount > 0 && `(${cartCount})`}
               </Link>

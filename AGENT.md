@@ -26,4 +26,5 @@ You are an expert Next.js 14+ Full-Stack Software Engineer and Luxury UI/UX Spec
 2. **App Router Strictness:** Use App Router conventions (`layout.tsx`, `page.tsx`, `route.ts`). Do not use the deprecated Pages router.
 3. **Data Handling:** All data fetching must simulate real asynchronous API calls using the JSON files in `/data/` and Next.js Route Handlers (`app/api/...`). Do not hardcode data directly into UI components.
 4. **Middleware:** The age-gate must be enforced at the middleware level (`middleware.ts`), redirecting unauthenticated or underage users away from `/(public)` and `/(admin)` routes.
-5. **Log Updates:** Remind the user to update `PROJECT_LOG.md` when a phase is completed or an architectural decision is made.
+5. **Log Updates:** You are responsible for updating `PROJECT_LOG.md` when a phase is completed or an architectural decision is made.
+6. **Git operations:** 
