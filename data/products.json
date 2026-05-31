@@ -10,9 +10,8 @@
     "compareAtPrice": 29900.0,
     "currency": "USD",
     "images": [
-      "/images/fur-coat-01.jpg",
-      "/images/fashion-editorial-01.jpg",
-      "/images/fashion-editorial-04.jpg"
+      "/images/fur-coat-brown.jpg",
+      "/images/fur-coat-pink.jpg"
     ],
     "material": "Russian Mink",
     "origin": "Russia",
@@ -43,8 +42,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-03.jpg",
-      "/images/fashion-editorial-02.jpg"
+      "/images/fur-coat-pink.jpg",
+      "/images/fur-coat-white.jpg"
     ],
     "material": "Silver Fox",
     "origin": "Scandinavia",
@@ -72,8 +71,8 @@
     "compareAtPrice": 21000.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-02.jpg",
-      "/images/fashion-editorial-03.jpg"
+      "/images/fur-coat-white.jpg",
+      "/images/fur-coat-light-pink.jpg"
     ],
     "material": "Russian Sable",
     "origin": "Siberia, Russia",
@@ -104,8 +103,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/accessories-01.jpg",
-      "/images/accessories-02.jpg"
+      "/images/hands-in-coat-pocket.jpg",
+      "/images/blond-woman-snow.jpg"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -135,8 +134,8 @@
     "compareAtPrice": 1500.0,
     "currency": "USD",
     "images": [
-      "/images/leopard-coat-01.jpg",
-      "/images/fashion-portrait-02.jpg"
+      "/images/fur-coat-light-pink.jpg",
+      "/images/leopard-coat.jpg"
     ],
     "material": "Modacrylic Faux Fur",
     "origin": "Italy",
@@ -168,8 +167,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fur-collar-01.jpg",
-      "/images/fashion-portrait-02.jpg"
+      "/images/leopard-coat.jpg",
+      "/images/fur-collar.jpg"
     ],
     "material": "Chinchilla",
     "origin": "Argentina",
@@ -199,8 +198,8 @@
     "compareAtPrice": 2200.0,
     "currency": "USD",
     "images": [
-      "/images/luxury-01.jpg",
-      "/images/luxury-02.jpg"
+      "/images/blond-woman-snow.jpg",
+      "/images/high-fashion-neon.jpg"
     ],
     "material": "Fox Fur / Shearling",
     "origin": "Finland",
@@ -229,8 +228,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/accessories-02.jpg",
-      "/images/accessories-01.jpg"
+      "/images/high-fashion-neon.jpg",
+      "/images/silky-ladies-fashion.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -260,8 +259,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/luxury-01.jpg",
-      "/images/fashion-editorial-04.jpg"
+      "/images/silky-ladies-fashion.jpg",
+      "/images/fashion-editorial-01.jpg"
     ],
     "material": "Coyote Fur",
     "origin": "Canada",
@@ -289,7 +288,7 @@
     "compareAtPrice": 350.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-04.jpg",
+      "/images/fashion-editorial-01.jpg",
       "/images/fashion-editorial-02.jpg"
     ],
     "material": "Microfiber Faux Fur",
@@ -318,8 +317,8 @@
     "compareAtPrice": 18000.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-04.jpg",
-      "/images/winter-coat-01.jpg"
+      "/images/fur-collar.jpg",
+      "/images/snowfall-on-winter-fashion.jpg"
     ],
     "material": "Sheared Beaver",
     "origin": "USA",
@@ -351,8 +350,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-portrait-01.jpg",
-      "/images/fashion-editorial-02.jpg"
+      "/images/snowfall-on-winter-fashion.jpg",
+      "/images/slow-fashion-coat.jpg"
     ],
     "material": "Lynx Fur",
     "origin": "Canada",
@@ -380,8 +379,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/accessories-01.jpg",
-      "/images/accessories-02.jpg"
+      "/images/fashion-editorial-02.jpg",
+      "/images/fashion-editorial-03.jpg"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -409,8 +408,8 @@
     "compareAtPrice": 1100.0,
     "currency": "USD",
     "images": [
-      "/images/winter-coat-01.jpg",
-      "/images/fashion-editorial-01.jpg"
+      "/images/fashion-editorial-03.jpg",
+      "/images/fashion-editorial-04.jpg"
     ],
     "material": "Acrylic Faux Fur",
     "origin": "Portugal",
@@ -442,8 +441,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/winter-coat-01.jpg",
-      "/images/accessories-02.jpg"
+      "/images/fashion-editorial-04.jpg",
+      "/images/fashion-editorial-05.jpg"
     ],
     "material": "Fisher Fur",
     "origin": "Canada",
@@ -474,8 +473,8 @@
     "compareAtPrice": 7800.0,
     "currency": "USD",
     "images": [
-      "/images/luxury-01.jpg",
-      "/images/accessories-01.jpg"
+      "/images/fashion-editorial-05.jpg",
+      "/images/fashion-portrait-01.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "Greece",
@@ -503,8 +502,8 @@
     "compareAtPrice": 38000.0,
     "currency": "USD",
     "images": [
-      "/images/fashion-portrait-02.jpg",
-      "/images/luxury-01.jpg"
+      "/images/slow-fashion-coat.jpg",
+      "/images/wrapped-up-warm.jpg"
     ],
     "material": "Barguzin Sable",
     "origin": "Siberia, Russia",
@@ -532,8 +531,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/leopard-coat-01.jpg",
-      "/images/luxury-02.jpg"
+      "/images/fashion-portrait-01.jpg",
+      "/images/fashion-portrait-02.jpg"
     ],
     "material": "Faux Fur / Cashmere Blend",
     "origin": "Italy",
@@ -561,8 +560,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-03.jpg",
-      "/images/fur-collar-01.jpg"
+      "/images/fashion-portrait-02.jpg",
+      "/images/fashion-portrait-03.jpg"
     ],
     "material": "Red Fox",
     "origin": "Sweden",
@@ -592,7 +591,7 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/luxury-01.jpg",
+      "/images/fashion-portrait-03.jpg",
       "/images/accessories-01.jpg"
     ],
     "material": "Raccoon Fur",
@@ -621,8 +620,8 @@
     "compareAtPrice": 950.0,
     "currency": "USD",
     "images": [
-      "/images/accessories-02.jpg",
-      "/images/fashion-editorial-02.jpg"
+      "/images/accessories-01.jpg",
+      "/images/accessories-02.jpg"
     ],
     "material": "Sheared Mink / Shearling",
     "origin": "Finland",
@@ -652,8 +651,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-portrait-01.jpg",
-      "/images/fashion-editorial-03.jpg"
+      "/images/accessories-02.jpg",
+      "/images/luxury-01.jpg"
     ],
     "material": "Polyester Faux Fur",
     "origin": "France",
@@ -684,8 +683,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/accessories-01.jpg",
-      "/images/accessories-02.jpg"
+      "/images/luxury-01.jpg",
+      "/images/luxury-02.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -714,7 +713,7 @@
     "currency": "USD",
     "images": [
       "/images/luxury-02.jpg",
-      "/images/luxury-01.jpg"
+      "/images/intimate-01.jpg"
     ],
     "material": "Polyester Faux Fur",
     "origin": "Turkey",
@@ -744,8 +743,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/luxury-01.jpg",
-      "/images/fashion-editorial-04.jpg"
+      "/images/intimate-01.jpg",
+      "/images/winter-coat-01.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -777,8 +776,8 @@
     "compareAtPrice": 5800.0,
     "currency": "USD",
     "images": [
-      "/images/intimate-01.jpg",
-      "/images/fur-collar-01.jpg"
+      "/images/wrapped-up-warm.jpg",
+      "/images/woman-in-black-trench.jpg"
     ],
     "material": "Silk / Russian Sable",
     "origin": "Italy",
@@ -809,8 +808,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-05.jpg",
-      "/images/luxury-02.jpg"
+      "/images/woman-in-black-trench.jpg",
+      "/images/winter-fashion-ice.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -841,8 +840,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/intimate-01.jpg",
-      "/images/luxury-01.jpg"
+      "/images/winter-coat-01.jpg",
+      "/images/hands-in-coat-pocket.jpg"
     ],
     "material": "Rabbit Fur / Satin",
     "origin": "Italy",
@@ -872,8 +871,8 @@
     "compareAtPrice": 6500.0,
     "currency": "USD",
     "images": [
-      "/images/winter-coat-01.jpg",
-      "/images/fashion-portrait-02.jpg"
+      "/images/winter-fashion-ice.jpg",
+      "/images/man-in-coat.jpg"
     ],
     "material": "Silver Fox / French Lace",
     "origin": "France",
@@ -903,8 +902,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "/images/fashion-editorial-01.jpg",
-      "/images/fashion-portrait-01.jpg"
+      "/images/man-in-coat.jpg",
+      "/images/hands-in-coat-pocket.jpg"
     ],
     "material": "Sheared Mink / Mesh",
     "origin": "Italy",

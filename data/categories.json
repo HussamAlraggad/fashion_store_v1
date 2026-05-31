@@ -4,7 +4,7 @@
     "name": "Outerwear",
     "slug": "outerwear",
     "description": "Luxurious fur coats, jackets, and capes crafted from the finest pelts.",
-    "image": "/images/fur-coat-01.jpg",
+    "image": "/images/fur-coat-brown.jpg",
     "productCount": 8
   },
   {
@@ -12,7 +12,7 @@
     "name": "Stoles & Wraps",
     "slug": "stoles-wraps",
     "description": "Elegant fur stoles, shawls, and wraps for timeless sophistication.",
-    "image": "/images/fashion-editorial-02.jpg",
+    "image": "/images/fur-coat-pink.jpg",
     "productCount": 6
   },
   {
@@ -36,7 +36,7 @@
     "name": "Faux Fur",
     "slug": "faux-fur",
     "description": "Ethically crafted faux fur pieces with the look and feel of the real thing.",
-    "image": "/images/leopard-coat-01.jpg",
+    "image": "/images/leopard-coat.jpg",
     "productCount": 5
   },
   {
