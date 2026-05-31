@@ -4,7 +4,7 @@
     "name": "Outerwear",
     "slug": "outerwear",
     "description": "Luxurious fur coats, jackets, and capes crafted from the finest pelts.",
-    "image": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
+    "image": "/images/fur-coat-01.jpg",
     "productCount": 8
   },
   {
@@ -12,7 +12,7 @@
     "name": "Stoles & Wraps",
     "slug": "stoles-wraps",
     "description": "Elegant fur stoles, shawls, and wraps for timeless sophistication.",
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    "image": "/images/fashion-editorial-02.jpg",
     "productCount": 6
   },
   {
@@ -20,7 +20,7 @@
     "name": "Intimate Apparel",
     "slug": "intimate-apparel",
     "description": "Sensual fur-trimmed lingerie, bodysuits, robes, and boudoir essentials.",
-    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+    "image": "/images/intimate-01.jpg",
     "productCount": 5
   },
   {
@@ -28,7 +28,7 @@
     "name": "Accessories",
     "slug": "accessories",
     "description": "Premium fur accessories including hats, gloves, scarves, and handbags.",
-    "image": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
+    "image": "/images/accessories-01.jpg",
     "productCount": 8
   },
   {
@@ -36,7 +36,7 @@
     "name": "Faux Fur",
     "slug": "faux-fur",
     "description": "Ethically crafted faux fur pieces with the look and feel of the real thing.",
-    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+    "image": "/images/leopard-coat-01.jpg",
     "productCount": 5
   },
   {
@@ -44,7 +44,7 @@
     "name": "Home Decor",
     "slug": "home-decor",
     "description": "Luxurious fur throws, pillows, and accents for your home.",
-    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
+    "image": "/images/luxury-01.jpg",
     "productCount": 4
   }
 ]

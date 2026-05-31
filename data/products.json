@@ -10,9 +10,9 @@
     "compareAtPrice": 29900.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80",
-      "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800&q=80"
+      "/images/fur-coat-01.jpg",
+      "/images/fashion-editorial-01.jpg",
+      "/images/fashion-editorial-04.jpg"
     ],
     "material": "Russian Mink",
     "origin": "Russia",
@@ -43,8 +43,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+      "/images/fashion-editorial-03.jpg",
+      "/images/fashion-editorial-02.jpg"
     ],
     "material": "Silver Fox",
     "origin": "Scandinavia",
@@ -72,8 +72,8 @@
     "compareAtPrice": 21000.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80"
+      "/images/fashion-editorial-02.jpg",
+      "/images/fashion-editorial-03.jpg"
     ],
     "material": "Russian Sable",
     "origin": "Siberia, Russia",
@@ -104,8 +104,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
+      "/images/accessories-01.jpg",
+      "/images/accessories-02.jpg"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -135,8 +135,8 @@
     "compareAtPrice": 1500.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
-      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
+      "/images/leopard-coat-01.jpg",
+      "/images/fashion-portrait-02.jpg"
     ],
     "material": "Modacrylic Faux Fur",
     "origin": "Italy",
@@ -168,8 +168,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
-      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
+      "/images/fur-collar-01.jpg",
+      "/images/fashion-portrait-02.jpg"
     ],
     "material": "Chinchilla",
     "origin": "Argentina",
@@ -199,8 +199,8 @@
     "compareAtPrice": 2200.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
-      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80"
+      "/images/luxury-01.jpg",
+      "/images/luxury-02.jpg"
     ],
     "material": "Fox Fur / Shearling",
     "origin": "Finland",
@@ -229,8 +229,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80",
-      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
+      "/images/accessories-02.jpg",
+      "/images/accessories-01.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -260,8 +260,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
-      "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800&q=80"
+      "/images/luxury-01.jpg",
+      "/images/fashion-editorial-04.jpg"
     ],
     "material": "Coyote Fur",
     "origin": "Canada",
@@ -289,8 +289,8 @@
     "compareAtPrice": 350.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+      "/images/fashion-editorial-04.jpg",
+      "/images/fashion-editorial-02.jpg"
     ],
     "material": "Microfiber Faux Fur",
     "origin": "China",
@@ -318,8 +318,8 @@
     "compareAtPrice": 18000.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800&q=80",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
+      "/images/fashion-editorial-04.jpg",
+      "/images/winter-coat-01.jpg"
     ],
     "material": "Sheared Beaver",
     "origin": "USA",
@@ -351,8 +351,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+      "/images/fashion-portrait-01.jpg",
+      "/images/fashion-editorial-02.jpg"
     ],
     "material": "Lynx Fur",
     "origin": "Canada",
@@ -380,8 +380,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
+      "/images/accessories-01.jpg",
+      "/images/accessories-02.jpg"
     ],
     "material": "Rabbit Fur",
     "origin": "Italy",
@@ -409,8 +409,8 @@
     "compareAtPrice": 1100.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80"
+      "/images/winter-coat-01.jpg",
+      "/images/fashion-editorial-01.jpg"
     ],
     "material": "Acrylic Faux Fur",
     "origin": "Portugal",
@@ -442,8 +442,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
+      "/images/winter-coat-01.jpg",
+      "/images/accessories-02.jpg"
     ],
     "material": "Fisher Fur",
     "origin": "Canada",
@@ -474,8 +474,8 @@
     "compareAtPrice": 7800.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
-      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
+      "/images/luxury-01.jpg",
+      "/images/accessories-01.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "Greece",
@@ -503,8 +503,8 @@
     "compareAtPrice": 38000.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
+      "/images/fashion-portrait-02.jpg",
+      "/images/luxury-01.jpg"
     ],
     "material": "Barguzin Sable",
     "origin": "Siberia, Russia",
@@ -532,8 +532,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
-      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80"
+      "/images/leopard-coat-01.jpg",
+      "/images/luxury-02.jpg"
     ],
     "material": "Faux Fur / Cashmere Blend",
     "origin": "Italy",
@@ -561,8 +561,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80",
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80"
+      "/images/fashion-editorial-03.jpg",
+      "/images/fur-collar-01.jpg"
     ],
     "material": "Red Fox",
     "origin": "Sweden",
@@ -592,8 +592,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
-      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80"
+      "/images/luxury-01.jpg",
+      "/images/accessories-01.jpg"
     ],
     "material": "Raccoon Fur",
     "origin": "USA",
@@ -621,8 +621,8 @@
     "compareAtPrice": 950.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+      "/images/accessories-02.jpg",
+      "/images/fashion-editorial-02.jpg"
     ],
     "material": "Sheared Mink / Shearling",
     "origin": "Finland",
@@ -652,8 +652,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
-      "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&q=80"
+      "/images/fashion-portrait-01.jpg",
+      "/images/fashion-editorial-03.jpg"
     ],
     "material": "Polyester Faux Fur",
     "origin": "France",
@@ -684,8 +684,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=800&q=80"
+      "/images/accessories-01.jpg",
+      "/images/accessories-02.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -713,8 +713,8 @@
     "compareAtPrice": 3400.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
+      "/images/luxury-02.jpg",
+      "/images/luxury-01.jpg"
     ],
     "material": "Polyester Faux Fur",
     "origin": "Turkey",
@@ -744,8 +744,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
-      "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800&q=80"
+      "/images/luxury-01.jpg",
+      "/images/fashion-editorial-04.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "Italy",
@@ -777,8 +777,8 @@
     "compareAtPrice": 5800.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80"
+      "/images/intimate-01.jpg",
+      "/images/fur-collar-01.jpg"
     ],
     "material": "Silk / Russian Sable",
     "origin": "Italy",
@@ -809,8 +809,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1548625149-fc4a29cf7092?w=800&q=80",
-      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80"
+      "/images/fashion-editorial-05.jpg",
+      "/images/luxury-02.jpg"
     ],
     "material": "Sheared Mink",
     "origin": "France",
@@ -841,8 +841,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
+      "/images/intimate-01.jpg",
+      "/images/luxury-01.jpg"
     ],
     "material": "Rabbit Fur / Satin",
     "origin": "Italy",
@@ -872,8 +872,8 @@
     "compareAtPrice": 6500.0,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
-      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
+      "/images/winter-coat-01.jpg",
+      "/images/fashion-portrait-02.jpg"
     ],
     "material": "Silver Fox / French Lace",
     "origin": "France",
@@ -903,8 +903,8 @@
     "compareAtPrice": null,
     "currency": "USD",
     "images": [
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80",
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80"
+      "/images/fashion-editorial-01.jpg",
+      "/images/fashion-portrait-01.jpg"
     ],
     "material": "Sheared Mink / Mesh",
     "origin": "Italy",

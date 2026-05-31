@@ -74,7 +74,7 @@ export default function HomePage() {
         {/* HERO */}
         <section className="relative h-[85vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=1600&q=85"
+            src="/images/fur-coat-01.jpg"
             alt="Luxury fur fashion editorial"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -194,7 +194,7 @@ export default function HomePage() {
             </div>
             <div className="relative aspect-[4/5] bg-luxury-gray-light overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=85"
+                src="/images/fashion-portrait-02.jpg"
                 alt="Luxury fashion craftsmanship"
                 className="absolute inset-0 w-full h-full object-cover"
               />
