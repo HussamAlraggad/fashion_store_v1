@@ -96,3 +96,16 @@
 * ❌ Hover scale effects felt cheap/unstable. → ✅ Removed completely.
 
 ---
+
+### [Date: 2026-05-31] - Hotfix: 404 / white screen (orphaned dev servers)
+
+**Root Cause:** Multiple orphaned `next dev` processes accumulated in the background from repeated testing, causing port conflicts. Port 3000 was held by a stale server while new ones fell back to 3001 — requests hitting port 3000 got 404s / stale bundles.
+
+**Fix:**
+1. Killed ALL orphaned processes: `pkill -f "next dev"` + `pkill -f "next-server"`.
+2. Cleared `.next` cache (`rm -rf .next`).
+3. Fresh `npm run dev` confirmed: `/` → HTTP 200, `/products` → HTTP 200.
+
+**Lesson:** Always kill orphaned dev servers between runs. Use `pkill -f "next dev"` before starting fresh.
+
+---
