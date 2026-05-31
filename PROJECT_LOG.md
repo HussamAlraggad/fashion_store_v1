@@ -80,3 +80,19 @@
 * Phase 6: GDPR banner, wishlist, store location, mobile audit.
 
 ---
+
+### [Date: 2026-05-31] - Hotfix: Header nav, invisible CTA, image duplicates, scale effects
+
+**Completed:**
+* **Header redesign** — 4 nav labels always visible (Collection, Categories dropdown, About, Bag). Auth no longer hides main navigation links.
+* **Fixed invisible "Our Story" button** — Was charcoal text on dark hero background (invisible). Now uses ivory text and border with hover inversion.
+* **Removed hover scale effects** — All buttons: no more `hover:scale-[1.02]` / `active:scale-[0.98]`. Clean transitions only.
+* **Fixed duplicate product images** — All 12 featured products now have UNIQUE primary images. Previously prod-002/012/017 shared same image, prod-003/011 shared, prod-026/027/030 shared. All resolved.
+* **30 products x 53 image URLs** from 21 curated Unsplash photos. No featured product shares its primary image with any other.
+
+**Mistakes & Fixes:**
+* ❌ `btn-secondary` on dark hero bg was invisible (charcoal-on-charcoal). → ✅ Added `!text-luxury-ivory !border-luxury-ivory` overrides for hero buttons.
+* ❌ Featured products shared primary images (3 products used same photo). → ✅ Rewrote all image assignments via script ensuring uniqueness.
+* ❌ Hover scale effects felt cheap/unstable. → ✅ Removed completely.
+
+---

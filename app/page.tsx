@@ -66,7 +66,7 @@ export default function HomePage() {
         <section className="relative h-[85vh] md:h-[90vh] bg-luxury-charcoal overflow-hidden">
           {/* Background image as IMG tag for better rendering */}
           <img
-            src="https://images.unsplash.com/photo-1512436991641-6748432a39ad?w=1600&q=85"
+            src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=1600&q=85"
             alt="Luxury fur fashion editorial"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -92,7 +92,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/#story"
-                className="btn-secondary text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
+                className="btn-secondary !border-luxury-ivory !text-luxury-ivory hover:!bg-luxury-ivory hover:!text-luxury-charcoal text-sm md:text-base font-semibold !px-10 !py-4 !border-2"
               >
                 Our Story
               </Link>
