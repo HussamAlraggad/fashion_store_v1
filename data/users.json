@@ -1,0 +1,42 @@
+[
+  {
+    "id": "usr-admin-001",
+    "email": "admin@fashionstore.com",
+    "password": "$2a$10$placeholder",
+    "name": "Vittoria De Luca",
+    "role": "admin",
+    "birthdate": "1985-03-15",
+    "ageVerified": true,
+    "createdAt": "2025-01-01"
+  },
+  {
+    "id": "usr-001",
+    "email": "elena.voss@example.com",
+    "password": "$2a$10$placeholder",
+    "name": "Elena Voss",
+    "role": "customer",
+    "birthdate": "1992-07-22",
+    "ageVerified": true,
+    "createdAt": "2025-09-10"
+  },
+  {
+    "id": "usr-002",
+    "email": "marcus.dupont@example.com",
+    "password": "$2a$10$placeholder",
+    "name": "Marcus Dupont",
+    "role": "customer",
+    "birthdate": "1988-11-03",
+    "ageVerified": true,
+    "createdAt": "2025-10-05"
+  },
+  {
+    "id": "usr-003",
+    "email": "sophie.bernard@example.com",
+    "password": "$2a$10$placeholder",
+    "name": "Sophie Bernard",
+    "role": "customer",
+    "birthdate": "1995-04-18",
+    "ageVerified": true,
+    "createdAt": "2025-11-20"
+  }
+]

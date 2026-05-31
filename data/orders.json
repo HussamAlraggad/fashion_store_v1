@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ord-001",
+    "userId": "usr-001",
+    "status": "delivered",
+    "items": [
+      {
+        "productId": "prod-004",
+        "name": "Rabbit Fur Bucket Hat",
+        "quantity": 1,
+        "price": 450.00
+      },
+      {
+        "productId": "prod-013",
+        "name": "Rabbit Fur Earmuffs",
+        "quantity": 2,
+        "price": 190.00
+      }
+    ],
+    "subtotal": 830.00,
+    "shipping": 25.00,
+    "tax": 66.40,
+    "total": 921.40,
+    "currency": "USD",
+    "shippingAddress": {
+      "firstName": "Elena",
+      "lastName": "Voss",
+      "street": "12 Rue de la Paix",
+      "city": "Paris",
+      "state": "Île-de-France",
+      "zip": "75002",
+      "country": "France"
+    },
+    "paymentMethod": "visa_****_4242",
+    "createdAt": "2025-11-15T10:30:00Z",
+    "deliveredAt": "2025-11-22T14:00:00Z"
+  },
+  {
+    "id": "ord-002",
+    "userId": "usr-002",
+    "status": "shipped",
+    "items": [
+      {
+        "productId": "prod-001",
+        "name": "Imperial Mink Overcoat",
+        "quantity": 1,
+        "price": 24900.00
+      }
+    ],
+    "subtotal": 24900.00,
+    "shipping": 0.00,
+    "tax": 1992.00,
+    "total": 26892.00,
+    "currency": "USD",
+    "shippingAddress": {
+      "firstName": "Marcus",
+      "lastName": "Dupont",
+      "street": "45 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10022",
+      "country": "USA"
+    },
+    "paymentMethod": "amex_****_1001",
+    "createdAt": "2025-12-01T15:45:00Z",
+    "deliveredAt": null
+  },
+  {
+    "id": "ord-003",
+    "userId": "usr-003",
+    "status": "pending",
+    "items": [
+      {
+        "productId": "prod-005",
+        "name": "Faux Fur Leopard Coat",
+        "quantity": 1,
+        "price": 1200.00
+      },
+      {
+        "productId": "prod-010",
+        "name": "Faux Fur Snood Scarf",
+        "quantity": 1,
+        "price": 280.00
+      },
+      {
+        "productId": "prod-018",
+        "name": "Faux Fur Pom Pom Scarf",
+        "quantity": 1,
+        "price": 350.00
+      }
+    ],
+    "subtotal": 1830.00,
+    "shipping": 35.00,
+    "tax": 146.40,
+    "total": 2011.40,
+    "currency": "USD",
+    "shippingAddress": {
+      "firstName": "Sophie",
+      "lastName": "Bernard",
+      "street": "8 Via Condotti",
+      "city": "Rome",
+      "state": "Lazio",
+      "zip": "00187",
+      "country": "Italy"
+    },
+    "paymentMethod": "mastercard_****_9900",
+    "createdAt": "2025-12-18T09:15:00Z",
+    "deliveredAt": null
+  }
+]

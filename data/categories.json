@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cat-outerwear",
+    "name": "Outerwear",
+    "slug": "outerwear",
+    "description": "Luxurious fur coats, jackets, and capes crafted from the finest pelts.",
+    "image": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
+    "productCount": 8
+  },
+  {
+    "id": "cat-stoles",
+    "name": "Stoles & Wraps",
+    "slug": "stoles-wraps",
+    "description": "Elegant fur stoles, shawls, and wraps for timeless sophistication.",
+    "image": "https://images.unsplash.com/photo-1608236415056-3c6cc9e085d4?w=800&q=80",
+    "productCount": 6
+  },
+  {
+    "id": "cat-accessories",
+    "name": "Accessories",
+    "slug": "accessories",
+    "description": "Premium fur accessories including hats, gloves, scarves, and handbags.",
+    "image": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
+    "productCount": 8
+  },
+  {
+    "id": "cat-faux",
+    "name": "Faux Fur",
+    "slug": "faux-fur",
+    "description": "Ethically crafted faux fur pieces with the look and feel of the real thing.",
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+    "productCount": 5
+  },
+  {
+    "id": "cat-home",
+    "name": "Home Decor",
+    "slug": "home-decor",
+    "description": "Luxurious fur throws, pillows, and accents for your home.",
+    "image": "https://images.unsplash.com/photo-1602872030217-4180b132578b?w=800&q=80",
+    "productCount": 4
+  }
+]

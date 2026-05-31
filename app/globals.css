@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-charcoal: #1A1A1A;
+    --color-ivory: #FFFFF0;
+    --color-cream: #F5F0E8;
+    --color-gold: #C9A84C;
+    --color-gold-light: #E8D48B;
+    --color-black: #0A0A0A;
+    --color-white: #FFFFFF;
+    --color-gray-light: #F3F3F3;
+    --color-gray: #888888;
+    --color-gray-dark: #444444;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-luxury-charcoal bg-luxury-ivory antialiased;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-luxury-gold/30 text-luxury-charcoal;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 
+           bg-luxury-charcoal text-luxury-ivory 
+           font-display text-sm tracking-widest uppercase
+           hover:bg-luxury-black transition-colors duration-300
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3 
+           bg-transparent text-luxury-charcoal 
+           font-display text-sm tracking-widest uppercase
+           border border-luxury-charcoal
+           hover:bg-luxury-charcoal hover:text-luxury-ivory 
+           transition-all duration-300
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-2 
+           text-luxury-charcoal font-body text-sm
+           hover:bg-luxury-gray-light/50 transition-colors duration-200;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 
+           bg-luxury-gold text-luxury-charcoal 
+           font-display text-sm tracking-widest uppercase
+           hover:bg-luxury-goldLight transition-colors duration-300
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 
+           bg-luxury-white border border-luxury-gray/30 
+           font-body text-sm text-luxury-charcoal
+           placeholder:text-luxury-gray/60
+           focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold/30
+           transition-all duration-200;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl lg:text-5xl 
+           text-luxury-charcoal tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply font-body text-sm md:text-base text-luxury-gray 
+           tracking-wider uppercase;
+  }
+
+  .luxury-divider {
+    @apply w-16 h-px bg-luxury-gold my-6;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-xl hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
