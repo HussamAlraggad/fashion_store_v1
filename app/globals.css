@@ -172,3 +172,13 @@ html.dark .border-luxury-gray\/20 { border-color: rgba(160,152,136,0.2) !importa
 html.dark .border-luxury-gray\/10 { border-color: rgba(160,152,136,0.1) !important; }
 html.dark .border-luxury-gray\/5 { border-color: rgba(160,152,136,0.05) !important; }
 html.dark .hover\:bg-luxury-gray-light\/50:hover { background-color: rgba(42,40,38,0.5) !important; }
+
+/* Hero section: keep text light on its own dark background */
+/* Hero section: keep text light on its own dark background */
+html.dark main section:first-of-type .text-luxury-ivory,
+html.dark main section:first-of-type .text-luxury-ivory\/80 { color: #FFFFF0 !important; }
+html.dark main section:first-of-type .text-luxury-gold { color: #C9A84C !important; }
+html.dark main section:first-of-type .btn-gold { background-color: #C9A84C !important; color: #1A1A1A !important; }
+html.dark main section:first-of-type .btn-gold:hover { background-color: #E8D48B !important; }
+html.dark main section:first-of-type .btn-secondary { border-color: #FFFFF0 !important; color: #FFFFF0 !important; }
+html.dark main section:first-of-type .btn-secondary:hover { background-color: #FFFFF0 !important; color: #1A1A1A !important; }
