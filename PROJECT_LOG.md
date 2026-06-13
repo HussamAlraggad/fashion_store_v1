@@ -179,3 +179,10 @@
 - Each product has a "Mark Sold Out" / "Mark In Stock" toggle button
 - Visual feedback: green/red status badges update on click
 - No page reload needed — optimistic UI update
+
+**Broke dark mode and fixed it:**
+- ❌ Changed header `bg-luxury-ivory/95` → `bg-white/95` — broke dark mode override (no `.dark .bg-white/95` rule)
+- ❌ Changed footer `text-luxury-gray` → `text-luxury-ivory/70` — no dark mode override existed for `/70` opacity
+- ✅ Reverted header to `bg-luxury-ivory/95` (restores dark mode support) + added `shadow-sm` for visual separation
+- ✅ Added missing dark mode CSS overrides: `text-luxury-ivory/70`, `/60`, `/50`, `border-luxury-ivory/10`, `text-luxury-black/80`
+- ✅ Footer now uses `text-luxury-ivory/70` (with proper dark mode support) for better contrast than original `text-luxury-gray`

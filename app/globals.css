@@ -173,6 +173,13 @@ html.dark .border-luxury-gray\/10 { border-color: rgba(160,152,136,0.1) !importa
 html.dark .border-luxury-gray\/5 { border-color: rgba(160,152,136,0.05) !important; }
 html.dark .hover\:bg-luxury-gray-light\/50:hover { background-color: rgba(42,40,38,0.5) !important; }
 
+/* Additional opacity variants (for Footer and other components) */
+html.dark .text-luxury-ivory\/70 { color: rgba(26,26,26,0.7) !important; }
+html.dark .text-luxury-ivory\/60 { color: rgba(26,26,26,0.6) !important; }
+html.dark .text-luxury-ivory\/50 { color: rgba(26,26,26,0.5) !important; }
+html.dark .border-luxury-ivory\/10 { border-color: rgba(26,26,26,0.1) !important; }
+html.dark .text-luxury-black\/80 { color: #F0EDE4 !important; }
+
 /* Hero section: keep text light on its own dark background */
 /* Hero section: keep text light on its own dark background */
 html.dark main section:first-of-type .text-luxury-ivory,
