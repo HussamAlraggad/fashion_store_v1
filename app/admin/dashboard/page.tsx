@@ -84,7 +84,7 @@ export default function AdminDashboard() {
           </div>
           <Link
             href="/"
-            className="text-xs text-luxury-gray hover:text-luxury-ivory transition-colors"
+            className="text-xs text-luxury-ivory/60 hover:text-luxury-ivory transition-colors"
           >
             Back to Store
           </Link>

@@ -143,3 +143,39 @@
 - Smart tag generation parses text for product type, material, color, and category keywords
 - Result: 20/30 products have strong category-appropriate matches; remaining 10 have "best available" fur fashion images
 - Build passes ✅
+
+## 2026-06-13: Theme contrast fixes + admin completeness assessment
+
+**Fixed contrast issues:**
+- **Footer**: Changed all `text-luxury-gray` (#888) on dark charcoal bg to `text-luxury-ivory/70` — much better readability
+- **Footer links**: Changed from invisible `text-luxury-gray` to visible `text-luxury-ivory/70` with gold hover
+- **Footer legal**: Changed `text-luxury-gray/60` to `text-luxury-ivory/50` for minimum legibility
+- **Admin header links**: "Back to Store" and "← Dashboard" — changed from `text-luxury-gray` to `text-luxury-ivory/60` on dark header
+- **Public header**: Changed from `bg-luxury-ivory/95` (nearly invisible on page) to `bg-white/95 backdrop-blur-md border-b shadow-sm` — creates clear visual separation from the ivory page background
+
+**Admin dashboard completeness assessment:**
+- ✅ Stats cards (total orders, revenue, pending, low stock)
+- ✅ Product overview table
+- ✅ Order tracking table with status badges
+- ❌ No order status update (can't change pending→shipped→delivered)
+- ❌ No product CRUD (add/edit/delete)
+- ❌ No customer management
+- Verdict: Functional as a read-only demo. Needs order status management and product editing for a complete pitch.
+
+## 2026-06-13: Admin dashboard upgraded with actions
+
+**New API endpoints:**
+- `PATCH /api/orders/[id]` — Update order status (pending→processing→shipped→delivered|cancelled)
+- `PATCH /api/products/[id]` — Toggle inStock status
+
+**Admin orders page:**
+- Each order now has action buttons: "→ next status" button that progresses the order through the workflow
+- "Cancel" button for non-delivered/non-cancelled orders
+- Delivered date shown for delivered orders
+- Cancelled orders shown with reduced opacity
+- All updates persist to JSON files via PATCH API
+
+**Admin products page:**
+- Each product has a "Mark Sold Out" / "Mark In Stock" toggle button
+- Visual feedback: green/red status badges update on click
+- No page reload needed — optimistic UI update
